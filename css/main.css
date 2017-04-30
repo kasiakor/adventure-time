@@ -1,0 +1,468 @@
+
+/*---------------------------
+		COLOUR GUIDE
+BEIGE: rgb(233, 229, 221)
+BLUE:  rgb(79, 165, 193)
+LIGHT BLUE: rgb(134, 188, 196)
+BROWN: rgb(157, 134, 92)
+DARK BROWN: rgb(86, 58, 34)
+
+-----------------------------*/
+
+/*---------------------------
+        GLOBAL STYLES
+-----------------------------*/
+
+body {
+	font-size: 15px;
+    padding: 0;
+    margin: 0;
+	font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+	color: rgb(3e, 3e, 255);
+    background-color: rgb(233, 229, 221);
+	text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3 {
+    margin-top: 0;
+    color: rgb(157, 134, 92);
+    font-size: 24px;
+}
+
+.global-nav-container {
+    padding-top: 20px;
+    padding-bottom: 330px;
+    margin: 0 auto;
+    background: url("../img/wallpaper.jpg");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.93;
+}
+/*---------------------------
+    MAIN NAVIGATION STYLES
+-----------------------------*/
+
+nav {
+    margin: 0 auto 30px;
+    max-width: 1000px;
+    position: relative;
+    width: 100%;
+    opacity: 0.9;
+}
+
+nav>ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    line-height: 1;
+    position: relative;
+    margin: auto;
+    min-height: 54px;
+    text-align: center;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    background: rgb(79, 165, 193);
+    z-index: 1;
+}
+
+nav>ul>ul {
+    display: none;
+}
+
+nav>ul>li {
+    position: relative;
+    display: inline;
+    margin: 0 12px;
+}
+
+nav::after, nav::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 6px;
+    height: 0;
+    width: 0;
+    border: 27px solid rgb(79, 165, 193);
+    z-index: 0;
+}
+
+nav::before {
+    border-left-color: transparent;
+    left: -34px;   
+}
+
+nav::after {
+    border-right-color: transparent;
+    right: -34px;
+}
+
+nav>ul>li>a {
+    display: inline-block;
+    padding: 15px 35px;
+    position: relative;
+    font-family: "Oswald", sans-serif;
+    font-size: 22px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 2px rgba(0, 0, 0, 0.2);
+    
+    -webkit-transition: color .3s linear;
+       -moz-transition: color .3s linear;
+         -o-transition: color .3s linear;
+        -ms-transition: color .3s linear;
+            transition: color .3s linear;   
+}
+
+nav>ul>li>a:hover {
+    color: bisque;
+}
+
+nav>ul>li>a::after {
+    content: "";
+    display: block;
+    position:absolute;
+    background-image: url("../img/compass-sm.png");
+    width: 30px;
+    height: 30px;
+    top: 11px;
+    right: -28px;
+    
+}
+
+nav>ul>li>a.last::after {
+    display: none;  
+}
+
+/*---------------------------
+ GLOBAL CONTAINER ELEMS STYLES
+-----------------------------*/
+
+.global-nav-container > div {
+    width: 100%;
+    max-width: 1240px;
+    margin: auto;
+    padding: 90px 100px;
+     -ms-transform: rotate(-2deg);
+    -webkit-transform: rotate(-2deg);
+    transform: rotate(-2deg);
+    font-size: 36px;
+    font-family: 'Cherry Cream Soda', cursive;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    box-sizing: border-box;    
+}
+
+.global-nav-container > div:nth-child(odd){
+    text-align: right;
+    -ms-transform: rotate(2deg);
+    -webkit-transform: rotate(2deg);
+    transform: rotate(2deg);
+}
+
+.global-nav-container > div > div {
+    display: inline-block;
+    background: white;
+    padding: 15px;
+    margin: 15px 0 0;
+    box-sizing: border-box;
+    text-align: left;
+    background: rgba(79, 165, 193, 0.9);
+    box-shadow: 0 0 4px white, 0 0 2px white, 0 0 1px white, 0 0 3px white, 0 0 7px white, 0 0 6px white, 0 0 2px white, 0 0 1px white, 0 0 3px white, 0 0 5px white, 0 0 4px white, 0 0 8px white, 0 0 1px white, 0 0 3px white, 0 0 5px white, 0 0 4px white, 0 0 2px white, 0 0 1px white, 0 0 3px white, 0 0 7px white, 0 0 6px white, 0 0 2px white, 0 0 1px white, 0 0 3px white, 0 0 5px white, 0 0 4px white, 0 0 8px white, 0 0 1px white, 0 0 3px white, 0 0 5px white;
+    border: 4px solid rgb(202, 180, 152);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;  
+}
+
+.global-nav-container .select-box {
+    display: block;
+    margin: 50px auto;
+    width: 100%;
+    -ms-transform: rotate(2deg);
+    -webkit-transform: rotate(2deg);
+    transform: rotate(2deg);   
+}
+
+input[type="button"]{
+   border:none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;  
+}
+
+.select-box {
+    display: inline-block;
+    font-size: 0;
+    padding: 25px;
+    max-width: 550px;
+}
+
+.select-box select, input {
+    font-size: 12px;
+    width: 50%;
+    max-width: 192px;
+    margin: 0 32px;
+    padding: 8px;
+    text-align: center;
+    color: rgb(70, 47, 27);
+    background: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: inline-block;
+    cursor:pointer;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+  
+.select-box select:active, input:active, .select-box select:focus, input:focus {
+    outline: none;
+    -moz-outline-style: none;
+}
+
+/*---------------------------
+       MAIN INFO STYLE
+-----------------------------*/
+.info {
+    margin: 90px auto;
+    text-align: center;
+    position:relative;
+    padding: 83px 60px;
+    background-image: url("../img/stamps-bg.png");
+    opacity: 0.49;
+}
+
+.info::after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+}
+
+.info-img {
+    display: inline-block;
+    box-shadow: 0 10px 6px -6px #aaa;
+    position: relative;
+    overflow: hidden;
+    transition: border-bottom-right-radius 1s, box-shadow .8s, transform 1s;
+    opacity: 0.9;
+}
+
+.info-img::after {
+    position: absolute;
+    bottom: 0px;
+    right: -10px;
+    width: 0px;
+    height: 0px;
+    content: "";
+    background-color: #E7E7E7;
+    box-shadow: -5px -5px 30px 2px #000;
+    transform: skew(6deg);
+    transition: width 1s, height 1s;
+  }
+
+.info-img:hover {
+    border-bottom-right-radius: 43px;
+    box-shadow: 3px 3px 20px 2px #aaa;
+    transform: skew(-1deg);
+}
+
+.info-img:hover:after {
+    width: 38px;
+    height: 30px;
+    border-top-left-radius: 1px;
+}
+
+/*---------------------------
+    INTERACTIVE MAP STYLE
+-----------------------------*/
+
+#map-container {
+    cursor: pointer;
+    position: relative;
+    font-size: 0;
+}
+
+#bgd-map {
+    width: 100%;
+    position: relative;
+    padding-bottom: 1px;
+}
+
+#plane {
+    position: absolute;
+    top: 55px;
+    left: 50px;
+    transition: left 1s ease-in-out, top 1s ease-in-out; 
+    z-index: 1;
+}
+
+.plane-text {
+    z-index: 100;
+    position: absolute;
+    color: rgb(233, 228, 219);
+    text-shadow: 1px 1px rgb(157, 134, 92);
+    font-size: 15px;
+    left: 20px;
+    top: 20px;
+}
+
+@media screen and (max-width: 440px) {
+    .global-nav-container > div {
+        font-size: 22px;
+        padding: 35px;
+    }
+    
+    .info {
+        background: none;
+        margin: 0;
+        opacity: 1;
+    }
+    
+    #vintage-paper {
+        width: 100%;
+    }
+    
+    #plane {
+        top: 40%;
+        left: 40%;
+    }
+    
+    .plane-text {
+        color: rgb(86, 58, 34);
+        text-shadow: 1px 1px white;
+        font-size: 18px;
+        margin: 0 auto;
+    }
+}
+    /* media query for 440px*/
+
+@media screen and (max-width: 660px) {
+    nav>ul>li {
+        display: block;
+        border-bottom: 1px solid white;
+    }
+    
+    nav>ul>li>a::after {
+        display: none;
+    }  
+    
+    #vintage-paper {
+        width: 100%;
+    }
+}
+    /* media query for 660px*/
+
+
+@media screen and (max-width: 770px) {
+      .select-box select, input {
+        display: block;
+        font-size: 11px;
+        width: 100%;
+        margin: 30px auto;
+    }
+    
+    .global-nav-container {
+        padding: 0;
+    }
+    
+    .info {
+        padding: 35px;
+    }
+}
+    /* media query for 770px*/
+
+
+/*---------------------------
+    GLOBAL FOOTER STYLE
+-----------------------------*/
+
+footer {
+    position: relative;
+    height: auto;
+    width: 100%;
+    background: rgb(134, 188, 196);
+}
+
+.outer {
+    padding: 12px 0;
+}
+
+footer .wrap {
+    margin: 0 auto;
+    white-space: nowrap;
+    font-size: 0;
+}
+
+footer .wrap .sub {
+    position: relative;
+    display: inline-block;
+    color: rgb(233, 228, 219);
+    width: 20%;
+    padding: 27px 10px;
+    border-left: 1px solid #e9e4db;
+    font-size: 15px;
+    text-align: center;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+
+footer .wrap .sub:first-child {
+    border: 0px;
+}
+
+#logo {
+    width: 100px;
+    margin-top: 40px;
+    -webkit-backface-visibility: hidden;
+    outline: 1px solid transparent;
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+    transition: transform .8s ease-in-out;
+}
+
+#logo:hover {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.empty {
+    visibility: hidden;
+}
+
+@media screen and (max-width: 1140px) {
+    footer .wrap {
+        white-space: normal;
+    }
+
+    footer .wrap .sub {
+        width: 33%;
+    }
+}
+    /* media query for 1140px*/
+
+@media screen and (max-width: 520px)  {
+    footer .wrap .sub {
+        width: 100%;
+        border: none;
+    }   
+    
+    footer .wrap .sub::after {
+        content: "";
+        width: 50%;
+        height: 1px;
+        background-color: #e9e4db;
+        display: block;
+        margin: auto;
+        position: relative;
+        top: 27px;
+    }
+
+    footer .wrap .sub:last-child::after, footer .wrap .sub:first-child::after {
+        height: 0;
+    }
+}
+    /* media query for 520px*/
+
+
