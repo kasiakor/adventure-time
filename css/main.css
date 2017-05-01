@@ -32,7 +32,6 @@ h1, h2, h3 {
 
 .global-nav-container {
     padding-top: 20px;
-    padding-bottom: 330px;
     margin: 0 auto;
     background: url("../img/wallpaper.jpg");
     background-size: 100%;
@@ -136,6 +135,13 @@ nav>ul>li>a.last::after {
     display: none;  
 }
 
+@media screen and (max-width: 1020px) {
+    nav {
+        overflow: hidden;
+    }
+}
+
+    /* media query for 1020px */
 /*---------------------------
  GLOBAL CONTAINER ELEMS STYLES
 -----------------------------*/
@@ -326,18 +332,17 @@ input[type="button"]{
     }
     
     #plane {
-        top: 40%;
-        left: 40%;
+        width: 25px;
     }
     
     .plane-text {
         color: rgb(86, 58, 34);
         text-shadow: 1px 1px white;
-        font-size: 18px;
+        font-size: 17px;
         margin: 0 auto;
     }
 }
-    /* media query for 440px*/
+    /* media query for 440px */
 
 @media screen and (max-width: 660px) {
     nav>ul>li {
@@ -353,7 +358,7 @@ input[type="button"]{
         width: 100%;
     }
 }
-    /* media query for 660px*/
+    /* media query for 660px */
 
 
 @media screen and (max-width: 770px) {
@@ -372,7 +377,7 @@ input[type="button"]{
         padding: 35px;
     }
 }
-    /* media query for 770px*/
+    /* media query for 770px */
 
 
 /*---------------------------
@@ -440,7 +445,7 @@ footer .wrap .sub:first-child {
         width: 33%;
     }
 }
-    /* media query for 1140px*/
+    /* media query for 1140px */
 
 @media screen and (max-width: 520px)  {
     footer .wrap .sub {
@@ -463,6 +468,6 @@ footer .wrap .sub:first-child {
         height: 0;
     }
 }
-    /* media query for 520px*/
+    /* media query for 520px */
 
 
