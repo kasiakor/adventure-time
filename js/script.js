@@ -40,7 +40,14 @@ $( document ).ready(function() {
         y: yPos
       };
     }
+    
+      document.getElementById("selection").onchange = function() {
+        if (this.selectedIndex!==0) {
+            window.location.href = this.value;
+        }        
+    };
 });
+
 
     
    /* $(".destinations").append("kasia "); 
