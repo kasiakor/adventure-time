@@ -10,7 +10,6 @@
         <link href="https://fonts.googleapis.com/css?family=Cherry+Cream+Soda" rel="stylesheet">
         <link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-        
     </head>
     <body>
         <header id="home">
@@ -18,7 +17,7 @@
                 <nav>
                     <ul>
                         <li><a href="#home">Home</a></li>
-                        <li><a href="#find-hostel">Find a hostel</a></li>
+                        <li><a href="#find-place">Book a bed</a></li>
                         <li><a href="#offer">What we offer</a></li>
                         <li><a href="#map">Map</a></li>
                         <li><a class="last" href="#contact">Contact us</a></li>
@@ -30,14 +29,14 @@
                 <div>
                     <div>Find your best hostels in the best cities!</div>
                 </div>
-                <div id="find-hostel">
+                <div id="find-place">
                     <div class="select-box">
-                        <select>
-                         <option selected disabled="disabled">CHOOSE HERE</option>
-                          <option value="St Christopher's Inns">St Christopher's Inns</option>
-                          <option value="The Flying Pig Hostels">The Flying Pig Hostels</option>
-                          <option value="Winston Kingdom">Winston Kingdom</option>
-                          <option value="Bauhaus Hostels">Bauhaus Hostels</option>
+                        <select id="selection">
+                         <option value="" selected disabled="disabled">CHOOSE HERE</option>
+                          <option value="https://www.st-christophers.co.uk/">St Christopher's Inns</option>
+                          <option value="http://www.flyingpig.nl/">The Flying Pig Hostels</option>
+                          <option value="http://www.winston.nl/">Winston Kingdom</option>
+                          <option value="http://www.bauhaus.be/">Bauhaus Hostels</option>
                         </select>
                         <input type="button" value="SEARCH"/>
                     </div>
