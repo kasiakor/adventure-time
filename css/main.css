@@ -206,11 +206,11 @@ input[type="button"]{
     max-width: 550px;
 }
 
-.select-box select, input {
+.select-box select {
     font-size: 12px;
-    width: 50%;
+    width: 100%;
     max-width: 192px;
-    margin: 0 32px;
+    margin: 0 155px;
     padding: 8px;
     text-align: center;
     color: rgb(70, 47, 27);
@@ -224,7 +224,7 @@ input[type="button"]{
     border-radius: 3px;
 }
   
-.select-box select:active, input:active, .select-box select:focus, input:focus {
+.select-box select:active, .select-box select:focus {
     outline: none;
     -moz-outline-style: none;
 }
