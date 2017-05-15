@@ -146,6 +146,10 @@ nav>ul>li>a.last::after {
  GLOBAL CONTAINER ELEMS STYLES
 -----------------------------*/
 
+.global-nav-container {
+    overflow: hidden;
+}
+
 .global-nav-container > div {
     width: 100%;
     max-width: 1240px;
